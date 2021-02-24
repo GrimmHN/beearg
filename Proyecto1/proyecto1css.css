@@ -10,13 +10,15 @@ a {
     text-decoration: none;
 }
 h1{
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    /* position: relative; */
     margin: 0px;
     text-align: center;
-    font-size: 20rem;
+    font-size: 15rem;
     /* background-color: orange; */
     border-radius: 30px;
     /* padding: auto; */
-    background-color: rgba(237, 163, 56, .3);
+    /* background-color: rgba(237, 163, 56, .3); */
 }
 main{
     /* position: relative; */
@@ -51,22 +53,26 @@ summary{
     font-weight: bold;
 }
 .wrapper{
-    width: 900px;
-    margin:auto;
+    width: 600px;
+    margin-inline-start: 550px;
 }
 .playersHeader{
     /* max-width: 800px; */
     /* width: 20%; */
     /* margin: auto; */
-    position: relative;
+    position: sticky;
     /* width: 300px; */
-    top: 0;
+    top: 20px;
     /* left: -20px */
     z-index: 9;
+    /* font-size: 1rem; */
+}
+header p {
+    font-size: 2rem;
 }
 .hero{
-    /* position: relative; */
-    /* height: 200px; */
+    position: static;
+    height: 200px;
     /* background-image: url('../imagenes-proyecto1/logo-csgo.jpg'); */
     margin: 0px 0px;
     /* background-size: 5rem; */
@@ -90,8 +96,9 @@ li:hover{
     transition-timing-function: ease;
     /* transition-property: unset; */;
     border: 1px solid whitesmoke;
-    * margin: 0px 0px;
-    padding: 7px 7px;
+    background-color: rgb(77, 70, 12);
+    /* * margin: 0px 0px;
+    padding: 7px 7px; */
 }
 ol li{
     display: block;
@@ -143,6 +150,9 @@ summary::-webkit-details-marker{
     color: transparent;
 }
 header{
+    padding: 10px;
+    top: 0;
+    position: sticky;
     color: whitesmoke;
     /* background-image: url(/imagenes-proyecto1/hyperbeast.png); */
     width: 300px;
@@ -169,18 +179,21 @@ hr{
 }
 .slider-conteiner{
     /* border: 1px solid blue; */
-    block-size: 100px;
+    /* block-size: 100px; */
     display: block;
     overflow: auto;
     scroll-behavior: smooth;
     white-space: nowrap;
     block-size: auto;
+    box-shadow: -10px -10px rgb(73, 55, 22);
+    border-radius: 2rem;
 }
 .slider-content{
     /* border: 1px solid yellow; */
     margin: 0;
     display: inline-block;
     width: 100%;
+    /* box-shadow: 10px 10px orange; */
 }
 .bulletNav{
     border: 1px solid orange;
@@ -189,10 +202,21 @@ hr{
     width: 20px;
     display: inline-block;
     margin-block-start: 10px;
-    margin-inline-start: 200px;
+    margin-inline-start: 22%;
 }
 h3{
     font-size: 4rem;
     text-align: center;
     text-decoration: underline;
+ }
+
+ .header{
+     position: sticky;
+     top: 15px;
+ }
+.bulletNav:hover{
+    background-color: orange;
 }
+.slider-conteiner::-webkit-scrollbar {
+     display: none;
+    }
